@@ -2,7 +2,6 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const authRoutes = require('./routes/auth');
-const blogRoutes = require('./routes/blogRoutes'); // Import the blog routes
 const app = express();
 const PORT = 5000;
 
@@ -17,7 +16,6 @@ app.get('/', (req, res) => {
 
 // Define API routes
 app.use('/api/auth', authRoutes); // Authentication routes
-app.use('/api/blogs', blogRoutes); // Register blog routes
 
 // Start the server
 app.listen(PORT, () => {
