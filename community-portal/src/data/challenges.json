@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "title": "Guided Meditation Mastery",
+    "description": "Learn and practice guided meditation techniques to improve mental clarity and relaxation.",
+    "date": "2024-12-10",
+    "difficulty": "medium",
+    "rules": "1. Follow the instructions. 2. Be consistent...",
+    "deadline": "2024-12-15",
+    "challenges_faced": "Some participants struggled with focus.",
+    "media": {
+      "image": "https://i.etsystatic.com/32961642/r/il/094d84/3877473929/il_fullxfull.3877473929_2lrv.jpg",
+      "video": "https://www.youtube.com/watch?v=tiAfUrU9Pvg",
+      "downloadableResource": "https://example.com/meditation-guide.pdf"
+    }
+  },
+  {
+    "id": 2,
+    "title": "Yoga for Stress Relief",
+    "description": "Practice restorative yoga poses that help reduce stress and promote inner peace.",
+    "date": "2024-12-20",
+    "difficulty": "easy",
+    "rules": "1. Practice poses daily...",
+    "deadline": "2024-12-25",
+    "challenges_faced": "Some poses were difficult for beginners.",
+    "media": {
+      "image": "https://www.argentinarosadoyoga.com/wp-content/uploads/2017/12/RESTORATIVE-YOGA-POSES-FOR-STRESS-RELIEF.png",
+      "video": "https://www.youtube.com/watch?v=HPloqo53Plc",
+      "downloadableResource": "https://example.com/yoga-guide.pdf"
+    }
+  },
+  {
+    "id": 3,
+    "title": "Mindfulness for Daily Living",
+    "description": "Develop mindfulness techniques for everyday situations to enhance focus and well-being.",
+    "date": "2024-11-25",
+    "difficulty": "medium",
+    "rules": "1. Practice mindfulness exercises daily for at least 10 minutes. 2. Reflect on your progress in a journal weekly.",
+      "deadline": "2024-12-01",
+      "challenges_faced": "Participants found it challenging to maintain consistency in practicing mindfulness.",
+    "media": {
+      "image": "https://mindfulmethodsforlife.com/wp-content/uploads/2017/11/Daily-Mindfulness.jpeg",
+      "video": "https://www.youtube.com/watch?v=cMwSxrkSX3E",
+      "downloadableResource": "https://example.com/mindfulness-guide.pdf"
+    }
+  },
+  {
+    "id": 4,
+    "title": "Creative Journaling for Relaxation",
+    "description": "Engage in creative journaling exercises to express yourself.",
+    "date": "2024-11-30",
+    "difficulty": "easy",
+    "rules": "1. Complete at least one journaling prompt daily. 2. Use creativity without judgment of your work.",
+    "deadline": "2024-12-05",
+    "challenges_faced": "Some participants struggled to find time for daily journaling.",
+    "media": {
+      "image": "https://i1.wp.com/planonthesunrise.com/wp-content/uploads/2020/08/IMG_7659.jpg?resize=960%2C960&ssl=1",
+      "video": "https://www.youtube.com/watch?v=Au-kUdEdg_Y",
+      "downloadableResource": "https://example.com/journaling-guide.pdf"
+    }
+  },
+  {
+    "id": 5,
+    "title": "Holistic Health Challenge",
+    "description": "Explore holistic health practices, including nutrition, self-care routines, and mindfulness.",
+    "date": "2024-12-05",
+    "difficulty": "hard",
+    "rules": [
+      "1. Follow the daily schedule of holistic health activities provided.",
+      "2. Avoid skipping any components of the plan, such as diet or mindfulness.",
+      "3. Make time for daily physical activity, such as yoga, walking, or stretching.",
+      "4. Keep a journal of your progress, including how you feel emotionally and physically each day.",
+      "5. Focus on whole foods in your diet, avoiding processed or unhealthy options.",
+      "6. Prioritize sleep, aiming for at least 7-8 hours each night to support your well-being.",
+      "7. Dedicate time each day to mindfulness or meditation practices to reduce stress.",
+      "8. Drink plenty of water throughout the day to stay hydrated.",
+      "9. Avoid unhealthy habits such as excessive screen time or alcohol consumption during the challenge.",
+      "10. Reflect weekly on your progress and adjust the plan if needed to fit your lifestyle."
+    ],
+    "deadline": "2024-12-12",
+    "challenges_faced": "Participants found it difficult to balance all components of the challenge, especially nutrition.",
+    "media": {
+      "image": "https://dryatendrayadav.com/wp-content/uploads/2018/08/Background-1-1024x683.jpg",
+      "video": "",
+      "downloadableResource": "https://example.com/holistic-health-guide.pdf"
+    }
+  }  
+]
+
+  

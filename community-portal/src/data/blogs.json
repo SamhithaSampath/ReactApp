@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1,
+      "title": "The Science Behind Guided Meditation",
+      "author": "John Doe",
+      "content": "Guided meditation involves following an instructor or script to achieve a state of relaxation.",
+      "isFeatured": true,
+      "imageUrl": "https://content.thriveglobal.com/wp-content/uploads/2020/05/Depositphotos_176769106_l-2015.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Yoga for Relaxation",
+      "author": "Jane Smith",
+      "content": "Restorative yoga emphasizes slow, mindful poses and deep breathing to promote relaxation, reduce anxiety, and enhance recovery.It is perfect for unwinding after a stressful day.",
+      "isFeatured": true,
+      "imageUrl":"https://th.bing.com/th/id/R.145c0ed82e4ce8596e487b83cfaf4d8d?rik=PghAH0INDukyjg&riu=http%3a%2f%2fhealthminds.in%2fblog%2fwp-content%2fuploads%2f2015%2f07%2fyoga3.jpg&ehk=obHT4YkL1uJRvDIv18PiO81bPScTLyQv1J67sbQ6zwg%3d&risl=&pid=ImgRaw&r=0"
+    },
+    {
+      "id": 8,
+      "title": "Wellness Routines for Busy Lives",
+      "author": "Emily Johnson",
+      "content": "This article offers wellness routines that fit into a busy lifestyle. From quick workouts to stress-relief techniques, it provides simple ways to prioritize health despite a hectic schedule.",
+      "isFeatured": true,
+      "imageUrl":"https://timborys.com/wp-content/uploads/2022/07/Linkedin-Newsletter-Graphics-1.png"
+    }
+  ]
+  

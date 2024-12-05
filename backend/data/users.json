@@ -1,0 +1,22 @@
+{
+  "user@example.com": {
+    "username": "user1",
+    "email": "user@example.com",
+    "password": "$2a$10$RzF1zH5wXwpm/Bjj2HreHkxlZ9.o5zI0pNeWCUYyocfOguTRtxpSO"
+  },
+  "rim@gmail.com": {
+    "username": "RimJoe",
+    "email": "rim@gmail.com",
+    "password": "$2a$10$04ROTosg8GTkyOyNs5ic0eu2LXBh6ukmqNXApSJuI5Uz7d0t9lhQ."
+  },
+  "user1@gmail.com": {
+    "username": "user1",
+    "email": "user1@gmail.com",
+    "password": "$2a$10$s/WdnLWQLQC6CqMiXn3xW.mzmNhYc2LibU1a8UJT4eQaAA6NHUo.a"
+  },
+  "user2@gmail.com": {
+    "username": "user2",
+    "email": "user2@gmail.com",
+    "password": "$2a$10$/pcGiJSpFFXSYZw1oC6dyer34YoEA0Nbj7NHaQ7UFAU8imnFECptq"
+  }
+}

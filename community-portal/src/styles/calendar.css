@@ -1,0 +1,76 @@
+/* calendar.css */
+
+/* General Blue Theme Colors */
+:root {
+    --primary-blue: #1e88e5; /* Main blue shade */
+    --light-blue: #eff5f9;  /* Light blue for background */
+    --dark-blue: #1565c0;  /* Dark blue for hover and active states */
+  }
+  
+  /* Toolbar Styling */
+  .rbc-toolbar {
+    background-color: var(--light-blue);
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-family: 'Arial, sans-serif';
+    color: var(--dark-blue);
+  }
+  
+  /* Navigation Buttons */
+  .rbc-toolbar button {
+    background-color: var(--primary-blue);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .rbc-toolbar button:hover {
+    background-color: var(--dark-blue);
+  }
+  
+  /* Header Styling */
+  .rbc-header {
+    background-color: var(--light-blue);
+    padding: 10px 0;
+    border-bottom: 2px solid var(--primary-blue);
+    text-align: center;
+    font-weight: bold;
+    color: var(--dark-blue);
+  }
+  
+  /* Calendar Cells */
+  .rbc-day-bg {
+    background-color: var(--light-blue);
+    border: 1px solid #90caf9; /* Lighter border for contrast */
+  }
+  
+  .rbc-day-bg:hover {
+    background-color: #e3f2fd; /* Very light blue on hover */
+  }
+  
+  /* Today's Highlight */
+  .rbc-today {
+    background-color: #bbdefb; /* Lighter blue for current day */
+    border: 2px solid var(--primary-blue);
+  }
+  
+  /* Event Styling */
+  .rbc-event {
+    background-color: var(--primary-blue);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    text-align: center;
+  }
+  
+  /* Month View Header */
+  .rbc-header span {
+    color: var(--dark-blue);
+  }
+  
+  
