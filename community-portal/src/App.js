@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Routes, Route, Link, useNavigate } from "react-router-dom"; // Just use Routes and Route
+import { Routes, Route, Link, useNavigate } from "react-router-dom"; 
 import { AppBar, Toolbar, Button, Typography, Container } from "@mui/material";
 import Home from "./pages/Home";
 import Blogs from "./pages/Blogs";
