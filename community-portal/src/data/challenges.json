@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "title": "Guided Meditation Mastery",
+    "title": "Guided Meditation Mastery (21 days challenge)",
     "description": "Learn and practice guided meditation techniques to improve mental clarity and relaxation.",
     "date": "2024-12-10",
     "difficulty": "medium",
@@ -16,7 +16,7 @@
   },
   {
     "id": 2,
-    "title": "Yoga for Stress Relief",
+    "title": "Yoga for Stress Relief (21 days challenge)",
     "description": "Practice restorative yoga poses that help reduce stress and promote inner peace.",
     "date": "2024-12-20",
     "difficulty": "easy",
@@ -31,7 +31,7 @@
   },
   {
     "id": 3,
-    "title": "Mindfulness for Daily Living",
+    "title": "Mindfulness for Daily Living (21 days challenge)",
     "description": "Develop mindfulness techniques for everyday situations to enhance focus and well-being.",
     "date": "2024-11-25",
     "difficulty": "medium",
@@ -61,7 +61,7 @@
   },
   {
     "id": 5,
-    "title": "Holistic Health Challenge",
+    "title": "Holistic Health Challenge (21 days challenge)",
     "description": "Explore holistic health practices, including nutrition, self-care routines, and mindfulness.",
     "date": "2024-12-05",
     "difficulty": "hard",
