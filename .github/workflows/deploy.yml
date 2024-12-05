@@ -1,0 +1,46 @@
+name: Deploy to Render
+
+on:
+  push:
+    branches:
+      - main  # Trigger action when code is pushed to the 'main' branch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Check out the code from GitHub repository
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Step 2: Set up Node.js environment
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'  # Use Node.js version 20
+
+      # Step 3: Install frontend dependencies
+      - name: Install frontend dependencies
+        working-directory: ./community-portal
+        run: |
+          npm install
+
+      # Step 4: Install backend dependencies
+      - name: Install backend dependencies
+        working-directory: ./backend
+        run: |
+          npm install
+
+      # Step 5: Run frontend tests (optional but recommended)
+      - name: Run frontend tests
+        working-directory: ./community-portal
+        run: |
+          npm test
+
+      # Step 6: Run backend tests (optional but recommended)
+      - name: Run backend tests
+        working-directory: ./backend
+        run: |
+          npm test
+
