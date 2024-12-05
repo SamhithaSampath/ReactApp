@@ -65,7 +65,7 @@ const Home = () => {
         align="center"
         style={{ fontWeight: "bold", color: "#5A3E8B" }} // Lavender color
       >
-        Welcome to the Community Portal
+        Welcome to MindfulPath
       </Typography>
       <Typography
         variant="h6"
@@ -73,8 +73,8 @@ const Home = () => {
         paragraph
         style={{ fontStyle: "italic", maxWidth: "800px", margin: "0 auto", color: "#6B728E" }} // Warm lavender
       >
-        Explore blogs, challenges, and events related to various topics. Join the community and engage in meaningful
-        conversations and activities.
+        Embark on a journey of mindfulness, wellness, and spiritual growth. Explore blogs, challenges, and events that
+        nurture your mind, body, and soul.Join the community and engage in meaningful conversations and activities.
       </Typography>
 
       {/* Featured Blogs Section */}
@@ -181,6 +181,9 @@ const Home = () => {
 };
 
 export default Home;
+
+
+
 
   
 
