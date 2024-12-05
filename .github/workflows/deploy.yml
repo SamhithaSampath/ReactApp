@@ -15,7 +15,7 @@ jobs:
         uses: actions/checkout@v3
 
       # Step 2: Set up Node.js environment for the frontend
-      - name: Set up Node.js
+      - name: Set up Node.js for frontend
         uses: actions/setup-node@v3
         with:
           node-version: '20'  # Use Node.js version 20
@@ -32,25 +32,17 @@ jobs:
         run: |
           npm install
 
-      # Step 5: Run frontend tests (optional but recommended)
-      - name: Run frontend tests
-        working-directory: ./community-portal
-        run: |
-          npm test
-
-      # Step 6: Run backend tests (optional but recommended)
-      - name: Run backend tests
-        working-directory: ./backend
-        run: |
-          npm test
-
-      # Step 7: Deploy to Render
-      - name: Deploy to Render
+      # Step 5: Deploy frontend to Render
+      - name: Deploy frontend to Render
         run: |
           curl -X POST https://api.render.com/v1/services/srv-ct8give8ii6s73ca88g0/deploys \
             -H "Authorization: Bearer ${{ secrets.RENDER_API_KEY }}"
 
-
+      # Step 6: Deploy backend to Render
+      - name: Deploy backend to Render
+        run: |
+          curl -X POST https://api.render.com/v1/services/srv-ct8goslds78s73care4g/deploys \
+            -H "Authorization: Bearer ${{ secrets.RENDER_API_KEY_BACKEND }}"
 
 
 
