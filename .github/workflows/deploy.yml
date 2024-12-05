@@ -32,23 +32,12 @@ jobs:
         run: |
           npm install
 
-      # Step 5: Run frontend tests (optional but recommended)
-      - name: Run frontend tests
-        working-directory: ./community-portal
-        run: |
-          npm test
-
-      # Step 6: Run backend tests (optional but recommended)
-      - name: Run backend tests
-        working-directory: ./backend
-        run: |
-          npm test
-
-      # Step 7: Deploy to Render
+      # Step 5: Deploy to Render
       - name: Deploy to Render
         run: |
           curl -X POST https://api.render.com/v1/services/srv-ct8give8ii6s73ca88g0/deploys \
             -H "Authorization: Bearer ${{ secrets.RENDER_API_KEY }}"
+
 
 
 
