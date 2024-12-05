@@ -64,7 +64,7 @@ const Register = ({ setToken, setUsername }) => {
         </Box>
 
         <Typography variant="h4" color="primary" gutterBottom>
-          Create an Account
+          Create an Account on MindfulPath
         </Typography>
         {error && <Typography color="error" sx={{ mb: 2 }}>{error}</Typography>}
 

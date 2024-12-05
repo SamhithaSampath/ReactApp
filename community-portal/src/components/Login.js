@@ -83,7 +83,7 @@ const Login = ({ setToken, setUsername }) => {
 
         {/* Animated Welcome Message */}
         <Typography variant="h4" color="primary" gutterBottom className={classes.welcomeMessage}>
-          Welcome Back!
+        Welcome Back to MindfulPath!
         </Typography>
         
         {error && <Typography color="error" sx={{ mb: 2 }}>{error}</Typography>}
