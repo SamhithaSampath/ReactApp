@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { Typography, Grid, Card, CardContent, CardMedia, Box } from "@mui/material";
 import { Link } from "react-router-dom";
-import { AccessAlarm, Event, TrendingUp } from '@mui/icons-material'; // Importing Icons
-import { useSpring, animated } from 'react-spring'; // For animation
 import FeaturedBlogs from "../components/FeaturedBlogs";
 import ChallengeCard from "../components/ChallengeCard";
 import challengesData from "../data/challenges.json";
 import eventsData from "../data/events.json";
+import { Book as BookIcon, EmojiEvents as EmojiEventsIcon, CalendarToday as CalendarTodayIcon } from "@mui/icons-material"; // Icons for all sections
 
 const Home = () => {
   const [challenges, setChallenges] = useState([]);
@@ -48,13 +47,6 @@ const Home = () => {
     return `${days}d ${hours}h ${minutes}m ${seconds}s`;
   };
 
-  // Animation for text appearance
-  const fadeIn = useSpring({
-    opacity: 1,
-    from: { opacity: 0 },
-    config: { duration: 1000 },
-  });
-
   return (
     <div
       style={{
@@ -68,33 +60,32 @@ const Home = () => {
       }}
     >
       {/* Welcome Section */}
-      <animated.div style={fadeIn}>
-        <Typography
-          variant="h3"
-          gutterBottom
-          align="center"
-          style={{ fontWeight: "bold", color: "#5A3E8B" }} // Lavender color
-        >
-          Welcome to MindfulPath
-        </Typography>
-        <Typography
-          variant="h6"
-          align="center"
-          paragraph
-          style={{ fontStyle: "italic", maxWidth: "800px", margin: "0 auto", color: "#6B728E" }} // Warm lavender
-        >
-          Embark on a journey of mindfulness, wellness, and spiritual growth. Explore blogs, challenges, and events that
-          nurture your mind, body, and soul. Join the community and engage in meaningful conversations and activities.
-        </Typography>
-      </animated.div>
+      <Typography
+        variant="h3"
+        gutterBottom
+        align="center"
+        style={{ fontWeight: "bold", color: "#5A3E8B" }} // Lavender color
+      >
+        Welcome to MindfulPath
+      </Typography>
+      <Typography
+        variant="h6"
+        align="center"
+        paragraph
+        style={{ fontStyle: "italic", maxWidth: "800px", margin: "0 auto", color: "#6B728E" }} // Warm lavender
+      >
+        Embark on a journey of mindfulness, wellness, and spiritual growth. Explore blogs, challenges, and events that
+        nurture your mind, body, and soul. Join the community and engage in meaningful conversations and activities.
+      </Typography>
 
-      {/* Featured Blogs Section */}
+      {/* Featured Blogs Section with Icon */}
       <Box sx={{ marginTop: "40px" }}>
         <Typography
           variant="h4"
           gutterBottom
-          style={{ fontWeight: "bold", color: "#3a5a8e" }} // Soft teal
+          style={{ fontWeight: "bold", color: "#3a5a8e", display: "flex", alignItems: "center" }} // Soft teal
         >
+          <BookIcon style={{ marginRight: "8px" }} /> {/* Book Icon for Featured Blogs */}
           Featured Blogs
         </Typography>
         <div className="featured-blogs">
@@ -102,13 +93,13 @@ const Home = () => {
         </div>
       </Box>
 
-      {/* Upcoming Challenges Section */}
+      {/* Upcoming Challenges Section with Icon */}
       <Typography
         variant="h4"
         gutterBottom
-        style={{ marginTop: "40px", fontWeight: "bold", color: "#3a5a8e" }} // Muted gold
+        style={{ marginTop: "40px", fontWeight: "bold", color: "#3a5a8e", display: "flex", alignItems: "center" }} // Muted gold
       >
-        <TrendingUp style={{ verticalAlign: 'middle', marginRight: '8px' }} />
+        <EmojiEventsIcon style={{ marginRight: "8px" }} /> {/* EmojiEvents Icon for Challenges */}
         Upcoming Challenges
       </Typography>
       <Grid container spacing={4} justifyContent="center">
@@ -133,13 +124,13 @@ const Home = () => {
         ))}
       </Grid>
 
-      {/* Upcoming Events Section */}
+      {/* Upcoming Events Section with Icon */}
       <Typography
         variant="h4"
         gutterBottom
-        style={{ marginTop: "40px", fontWeight: "bold", color: "#3a5a8e" }} // Light olive green
+        style={{ marginTop: "40px", fontWeight: "bold", color: "#3a5a8e", display: "flex", alignItems: "center" }} // Light olive green
       >
-        <Event style={{ verticalAlign: 'middle', marginRight: '8px' }} />
+        <CalendarTodayIcon style={{ marginRight: "8px" }} /> {/* CalendarToday Icon for Events */}
         Upcoming Events
       </Typography>
       <Grid container spacing={4} justifyContent="center">
@@ -194,6 +185,7 @@ const Home = () => {
 };
 
 export default Home;
+
 
 
 
