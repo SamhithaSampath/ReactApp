@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import TopicList from "../components/TopicList";
 import ArticleList from "../components/ArticleList";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 import articlesData from "../data/articles.json";
 import { TextField } from "@mui/material";
 
@@ -42,23 +42,38 @@ const Blogs = () => {
     <div
       style={{
         backgroundImage: "url('https://wallpapers.com/images/hd/blue-pastel-background-1200-x-2133-0of62sjwos2rlzvy.jpg')",
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        minHeight: '100vh',
-        padding: '20px',
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        minHeight: "100vh",
+        padding: "20px",
       }}
     >
       {selectedTopic ? (
         <div>
-          {/* Search Bar for Articles */}
-          <TextField
-            label="Search articles..."
-            variant="outlined"
-            fullWidth
-            value={searchArticle}
-            onChange={(e) => setSearchArticle(e.target.value)}
-            margin="normal"
-          />
+          {/* Container with custom background for search functionality */}
+          <div
+            style={{
+              backgroundImage: "url('https://wallpapers.com/images/hd/blue-pastel-background-1200-x-2133-0of62sjwos2rlzvy.jpg')",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              padding: "40px",
+              borderRadius: "10px",
+              boxShadow: "0px 4px 10px rgba(0,0,0,0.2)",
+              marginBottom: "20px", // Added marginBottom for space between search and articles list
+            }}
+          >
+            {/* Search Bar for Articles */}
+            <TextField
+              label="Search articles..."
+              variant="outlined"
+              fullWidth
+              value={searchArticle}
+              onChange={(e) => setSearchArticle(e.target.value)}
+              margin="normal"
+              style={{ backgroundColor: "rgba(255,255,255,0.8)", borderRadius: "5px" }}
+            />
+          </div>
+          {/* Article List */}
           <ArticleList
             topic={selectedTopic}
             articles={filteredArticles}
@@ -67,15 +82,29 @@ const Blogs = () => {
         </div>
       ) : (
         <div>
-          {/* Search Bar for Topics */}
-          <TextField
-            label="Search topics..."
-            variant="outlined"
-            fullWidth
-            value={searchTopic}
-            onChange={(e) => setSearchTopic(e.target.value)}
-            margin="normal"
-          />
+          {/* Container for Topic Search */}
+          <div
+            style={{
+              backgroundImage: "url('https://wallpaperaccess.com/full/2551285.jpg')",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              padding: "100px",
+              borderRadius: "10px",
+              boxShadow: "0px 4px 10px rgba(0,0,0,0.2)",
+            }}
+          >
+            {/* Search Bar for Topics */}
+            <TextField
+              label="Search topics..."
+              variant="outlined"
+              fullWidth
+              value={searchTopic}
+              onChange={(e) => setSearchTopic(e.target.value)}
+              margin="normal"
+              style={{ backgroundColor: "rgba(255,255,255,0.8)", borderRadius: "5px" }}
+            />
+          </div>
+          {/* Topic List */}
           <TopicList topics={filteredTopics} onSelectTopic={handleSelectTopic} />
         </div>
       )}
@@ -84,7 +113,6 @@ const Blogs = () => {
 };
 
 export default Blogs;
-
 
 
 
